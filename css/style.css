@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+button{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+.blue{
+    background-color:#00f;
+}
+
+header{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.fb-image{
+    width:70px;
+    border-radius: 50%;
+}

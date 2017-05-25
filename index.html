@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Google Login Project </title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="myApp">
+<div ng-controller="myController">
+    <header><h1>Welcome to Gmail/Facebook Authorization Login</h1></header>
+    <button ng-click="onGoogleLogin()">Login with Google Account</button>
+    <h4>{{gmail.username}}</h4>
+    <h4>{{gmail.email}}</h4>
+    <img ng-src="{{g_image}}">
+    <br/><br/>
+    <button ng-click="onFBLogin()" class="blue">Login with FaceBook Account</button>
+    <h4>{{facebook.username}}</h4>
+    <h4>{{facebook.email}}</h4>
+    <img ng-src="{{fb_image}}" class="fb-image">
+</div>
+
+
+<script src="js/angular.js"></script>
+<script src="js/script.js"></script>
+<script src="js/app.js"></script>
+<script>// <![CDATA[
+(function() {
+    var po = document.createElement('script');
+    po.type = 'text/javascript';
+    po.async = true;
+    po.src = 'https://apis.google.com/js/client.js?onload=onLoadFunction';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(po, s);
+})();
+// ]]>
+</script>
+</body>
+</html>
